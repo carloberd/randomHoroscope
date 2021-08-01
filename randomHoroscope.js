@@ -9,7 +9,7 @@ const planets = ['Mars', 'Venus', 'Mercury', 'the Moon', 'the Sun', 'Venus', 'Pl
 const zodiacSign = zodiacSigns[Math.floor(Math.random() * zodiacSigns.length)];
 
 // Given zodiac sign, choose randomly a trait based on your sign element
-const characterElement = zodiacSign => {
+const traitElement = zodiacSign => {
     let min = 0;
     let max = 0;
     if (zodiacSign === 'Aries' || zodiacSign === 'Leo' || zodiacSign === 'Sagittarius') {
@@ -36,4 +36,4 @@ const phrase = (zodiacSign, element, planet) => {
     return `${zodiacSign}: ${planet} affects you. You are a very ${element} person`;
 }
 
-console.log(phrase(zodiacSign, characterElement(zodiacSign), planet));
+console.log(phrase(zodiacSign, traitElement(zodiacSign), planet));
