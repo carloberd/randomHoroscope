@@ -11,3 +11,5 @@
 - Javascript 
 - Node.js
 - Git & GitHub
+
+*Type of messages*: Fantasy short stories
