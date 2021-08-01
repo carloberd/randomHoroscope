@@ -12,4 +12,4 @@
 - Node.js
 - Git & GitHub
 
-*Type of messages*: Fantasy short stories
+**Type of messages**: *Random Horoscope*
