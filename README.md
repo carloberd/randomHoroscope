@@ -1,5 +1,5 @@
-# Mixed Messages
-## This is the first Portfolio project of Codeacademy
+# Mixed Messages: Random Horoscope
+## This is the first portfolio project of my Codeacademy course
 
 **Scope of this project:**
 - Making a program that visualize a new random message each time a user launch it
