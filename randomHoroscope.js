@@ -5,9 +5,10 @@ const elements = ['strong emotion', 'enthusiastic', 'passionate', 'temperemental
                 'powerful', 'creativity', 'fun', 'ideas', 'adventurous', 'exciting'];
 const planets = ['Mars', 'Taurus', 'Mercury', 'Moon', 'Sun', 'Venus', 'Pluto', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
-
+// Generate random zodiac sign 
 const zodiacSign = zodiacSigns[Math.floor(Math.random() * zodiacSigns.length)];
 
+// Given zodiac sign, choose randomly an 'element' of your character
 const elementFinder = zodiacSign => {
     let min = 0;
     let max = 0;
@@ -26,5 +27,4 @@ const elementFinder = zodiacSign => {
     }
     return elements[Math.floor(Math.random() * (max-min) + min)];
 }
-
 
