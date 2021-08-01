@@ -3,13 +3,13 @@ const elements = ['strong emotion', 'enthusiastic', 'passionate', 'temperemental
                 'refreshing', 'charming', 'mysterious', 'private', 'sensitive', 'emotional', 
                 'dependable', 'grounded', 'reliable', 'materialistic', 'loyal', 'practical',
                 'powerful', 'creativity', 'fun', 'ideas', 'adventurous', 'exciting'];
-const planets = ['Mars', 'Taurus', 'Mercury', 'Moon', 'Sun', 'Venus', 'Pluto', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+const planets = ['Mars', 'Venus', 'Mercury', 'the Moon', 'the Sun', 'Venus', 'Pluto', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
 // Generate random zodiac sign 
 const zodiacSign = zodiacSigns[Math.floor(Math.random() * zodiacSigns.length)];
 
 // Given zodiac sign, choose randomly an 'element' of your character
-const elementFinder = zodiacSign => {
+const characterElement = zodiacSign => {
     let min = 0;
     let max = 0;
     if (zodiacSign === 'Aries' || zodiacSign === 'Leo' || zodiacSign === 'Sagittarius') {
@@ -31,3 +31,9 @@ const elementFinder = zodiacSign => {
 // Generate random planet
 const planet = planets[Math.floor(Math.random() * planets.length)];
 
+// Generate random phrase
+const phrase = (zodiacSign, element, planet) => {
+    return `${zodiacSign}: ${planet} affects you. You are a very ${element} person`;
+}
+
+console.log(phrase(zodiacSign, characterElement(zodiacSign), planet));

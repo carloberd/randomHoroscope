@@ -13,3 +13,6 @@
 - Git & GitHub
 
 **Type of messages**: *Random Horoscope*
+
+This is a very simple project of mine, done to improve and use some new javascript skills 
+and in the meantime learn to use Git and GitHub.
