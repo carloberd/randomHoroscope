@@ -1,5 +1,5 @@
 const zodiacSigns = ['Aries', 'Tauros', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Acquarius', 'Pisces'];
-const elements = ['strong emotion', 'enthusiastic', 'passionate', 'temperemental', 'achiever', 'interesting', 
+const traits = ['strong emotion', 'enthusiastic', 'passionate', 'temperemental', 'achiever', 'interesting', 
                 'refreshing', 'charming', 'mysterious', 'private', 'sensitive', 'emotional', 
                 'dependable', 'grounded', 'reliable', 'materialistic', 'loyal', 'practical',
                 'powerful', 'creativity', 'fun', 'ideas', 'adventurous', 'exciting'];
@@ -25,7 +25,7 @@ const traitElement = zodiacSign => {
         min = 18;
         max = 23;
     }
-    return elements[Math.floor(Math.random() * (max-min) + min)];
+    return traits[Math.floor(Math.random() * (max-min) + min)];
 }
 
 // Generate random planet
