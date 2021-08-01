@@ -28,3 +28,6 @@ const elementFinder = zodiacSign => {
     return elements[Math.floor(Math.random() * (max-min) + min)];
 }
 
+// Generate random planet
+const planet = planets[Math.floor(Math.random() * planets.length)];
+
