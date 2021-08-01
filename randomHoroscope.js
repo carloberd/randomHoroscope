@@ -8,7 +8,7 @@ const planets = ['Mars', 'Venus', 'Mercury', 'the Moon', 'the Sun', 'Venus', 'Pl
 // Generate random zodiac sign 
 const zodiacSign = zodiacSigns[Math.floor(Math.random() * zodiacSigns.length)];
 
-// Given zodiac sign, choose randomly an 'element' of your character
+// Given zodiac sign, choose randomly a trait based on your sign element
 const characterElement = zodiacSign => {
     let min = 0;
     let max = 0;
